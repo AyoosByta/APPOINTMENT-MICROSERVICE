@@ -109,6 +109,7 @@ public class AppointmentQueryServiceImpl implements AppointmentQueryService {
 
 	@Override
 	public ResponseEntity<DataResponse> getQueryresult(TaskQueryRequest taskQueryRequest) {
+	
 		return tasksApi.getQueryResult(taskQueryRequest);
 	}
 
