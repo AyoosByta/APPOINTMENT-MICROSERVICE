@@ -82,7 +82,7 @@ public class AppointmentCommandServiceImpl implements AppointmentCommandService 
 
 	private final Logger log = LoggerFactory.getLogger(AppointmentCommandServiceImpl.class);
 
-	private static final String BPM_PROCESSDEFINITION_ID = "booking-prototype-key:1:79460";
+	private static final String BPM_PROCESSDEFINITION_ID = "booking-prototype-key:1:47";
 
 	@Autowired
 	private DoctorResourceApi doctorApi;
@@ -247,6 +247,7 @@ public class AppointmentCommandServiceImpl implements AppointmentCommandService 
 	
 
 	public AppointmentDetails getAppointmentDetails() {
+		log.info("================in getAppointmentDetails()");
 		AppointmentDetails appointmentDetails = new AppointmentDetails();
 		appointmentDetails.setAppointmentDateAndTime(ZonedDateTime.now(ZoneId.systemDefault()).toString());
 		appointmentDetails.setTrackingID(generateTrackingID());

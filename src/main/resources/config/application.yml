@@ -114,7 +114,7 @@ jhipster:
     license: null
     license-url: null
 bpm:
-  url: http://34.74.192.113:8080/activiti-rest/service
+  url: http://dev.servers.divisosofttech.com/activiti-rest/service
   security:
     basicAuth:
       username: kermit
