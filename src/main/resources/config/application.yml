@@ -119,3 +119,7 @@ bpm:
     basicAuth:
       username: kermit
       password: kermit
+
+doctor:
+  url: 35.229.27.47:8083 
+      

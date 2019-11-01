@@ -7,12 +7,19 @@ public class PatientInfo extends ByteArrayType  {
 	
 	private String patientId;
 	private Long phoneNumber;
+	private Long phoneCode;
 	private String email;
 	private String firstName;
 	@Override
 	public String toString() {
 		return String.format("PatientInfo [patientId=%s,\n phoneNumber=%s,\n email=%s,\n firstName=%s]", patientId,
 				phoneNumber, email, firstName);
+	}
+	public Long getPhoneCode() {
+		return phoneCode;
+	}
+	public void setPhoneCode(Long phoneCode) {
+		this.phoneCode = phoneCode;
 	}
 	public String getPatientId() {
 		return patientId;

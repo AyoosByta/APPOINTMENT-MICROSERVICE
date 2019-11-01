@@ -84,7 +84,7 @@ security:
       access-token-uri: http://dev.servers.divisosofttech.com:8888/auth/realms/ayoos/protocol/openid-connect/token
       user-authorization-uri: http://dev.servers.divisosofttech.com:8888/auth/realms/ayoos/protocol/openid-connect/auth
       client-id: account
-      client-secret: 28fa0a12-3920-421e-81ec-afdd525ceb1a
+      client-secret: 95059ed8-aece-4462-87b5-63c6e9c4a2dc
       scope: openid profile email
     resource:
       user-info-uri: http://dev.servers.divisosofttech.com:8888/auth/realms/ayoos/protocol/openid-connect/userinfo
@@ -119,3 +119,7 @@ bpm:
     basicAuth:
       username: kermit
       password: kermit
+
+doctor:
+  url: 35.229.27.47:8083 
+      

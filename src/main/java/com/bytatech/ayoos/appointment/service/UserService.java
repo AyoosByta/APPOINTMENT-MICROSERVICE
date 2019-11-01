@@ -248,6 +248,8 @@ public class UserService {
 
     private static User getUser(Map<String, Object> details) {
         User user = new User();
+        System.out.println("Details are +++++++++++++++++++ "+details);
+        System.out.println("getuser user from auth is "+user+" preferred username is "+details.get("preferred_username"));
         user.setId((String) details.get("sub"));
         user.setLogin(((String) details.get("preferred_username")).toLowerCase());
         if (details.get("given_name") != null) {
